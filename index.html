@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./trangchu.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="grid_header">
+            <div class="header_layerDesktop">
+                <div class="header_layerDesktop_img">
+                    <div>
+                        <img src="https://www.asus.com/media/Odin/images/header/rog-gray_h.svg"
+                            class="header_layerDesktop_img_space" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://www.asus.com/media/Odin/images/header/proArt-gray_h.svg"
+                            class="header_layerDesktop_img_space" alt="" />
+                    </div>
+                </div>
+
+                <div class="header_layerDesktop_text">
+                    <div>
+                        <a href="#">Gaming</a>
+                    </div>
+                    <div>
+                        <a href="#">Doanh nghiệp</a>
+                    </div>
+                </div>
+            </div>
+            <hr width="100%" style="height: 1px; color: #ece9e9;">
+
+            <div class="header_link_list">
+                <div class="logo">
+                    <a href="https://minh6301.github.io/demoProject/index">
+                        <img src="https://www.freepnglogos.com/uploads/logo-asus-png/asus-logo-hd-photo-15.png" alt="">
+
+                    </a>
+                </div>
+                <div class="btn_show-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="header_link_list_item">
+                    <div class="icon-close">
+                        <i class="fas fa-times "></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/tatcasanpham">Máy tính xách tay</a>
+                        </li>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/phone">Điện thoại</a>
+                        </li>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/pc">Màn hình / Máy bàn</a>
+                        </li>
+                        <li>
+                            <a href="#">Bo mạch chủ / Linh kiện</a>
+                        </li>
+                        <li>
+                            <a href="#">Thiết Bị Mạng / IoT / Servers</a>
+                        </li>
+                        <li>
+                            <a href="#">Phụ kiện</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header_link_list_support">
+                    <ul>
+                        <li>
+                            <p>Mua hàng</p>
+                        </li>
+                        <li>
+                            <p>Hỗ trợ</p>
+                        </li>
+                        <li id="btn-search">
+                            <button onclick="btnSearch()">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </li>
+                        <li class="user_login">
+                            <a href="https://minh6301.github.io/demoProject/login"><i class="far fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search" id="search-text">
+                <div class="search-field">
+                    <button class="search-icon"><i class="fa fa-search"></i></button>
+                    <input type="text" class="search-input" placeholder="Tìm kiếm">
+                </div>
+            </div>
+    </header>
+    <hr width="100%" style="height: 1px; color: #e9e6e6;">
+
+    <div class="container">
+        <button onclick="outSearch()" id="block_container"></button>
+        <div class="grid_container">
+            <div id="slider-wrapper">
+                <div class="inner-wrapper">
+                    <input checked type="radio" name="slide" class="control" id="Slide1" />
+                    <label for="Slide1" id="s1"></label>
+                    <input type="radio" name="slide" class="control" id="Slide2" />
+                    <label for="Slide2" id="s2"></label>
+                    <input type="radio" name="slide" class="control" id="Slide3" />
+                    <label for="Slide3" id="s3"></label>
+                    <input type="radio" name="slide" class="control" id="Slide4" />
+                    <label for="Slide4" id="s4"></label>
+                    <div class="overflow-wrapper">
+                        <a class="slide" href="#"><img
+                                src="https://www.asus.com/WebsitesBanner/VN/banners/lx5bmoct8d4fvacc/lx5bmoct8d4fvacc-0_0_desktop_2X.jpg?webp" /></a>
+                        <a class="slide" href="#"><img
+                                src="https://www.asus.com/WebsitesBanner/VN/banners/krwnr6g0sftcvu9d/krwnr6g0sftcvu9d-0_0_desktop_2X.jpg" /></a>
+                        <a class="slide" href="#"><img
+                                src="https://www.asus.com/WebsitesBanner/VN/banners/qrmmrtd8jqzyj0ec/qrmmrtd8jqzyj0ec-0_0_desktop_2X.jpg" /></a>
+                        <a class="slide" href="#"><img
+                                src="https://www.asus.com/WebsitesBanner/VN/banners/vtluovutdo4zszmh/vtluovutdo4zszmh-0_0_desktop_2X.jpg?webp" /></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="container_image">
+                <img src="https://www.asus.com/WebsitesBanner/VN/banners/zx7qrqlzorqlehcy/zx7qrqlzorqlehcy-0_0_desktop_2X.jpg?webp"
+                    alt="">
+            </div>
+
+            <div class="grid_item_product">
+                <div class="product_item">
+                    <img src="https://www.asus.com/WebsitesBanner/VN/banners/i0m8aokbv2dngsqb/i0m8aokbv2dngsqb-1_0_desktop_2X.jpg?webp"
+                        alt="" id="product_item1">
+                    <div id="product_item_info_bottom">
+                        <h1>Asus Vivobook Pro 14/15 OLED</h1>
+                        <h2>Thỏa sức tưởng tượng của bạn</h2><br>
+                        <a href="#" id="product_item_viewmore" style="color: rgb(0, 0, 0);">Khám phá thêm <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <img src="https://www.asus.com/WebsitesBanner/VN/banners/i0m8aokbv2dngsqb/i0m8aokbv2dngsqb-7_0_desktop_2X.jpg?webp"
+                        alt="" id="product_item2">
+                    <div id="product_item_info_bottom">
+                        <h1>Asus Vivobook 15 OLED</h1>
+                        <h2>Công việc của tôi, cá tính của tôi</h2><br>
+                        <a href="#" id="product_item_viewmore" style="color: rgb(70, 139, 218);">Khám phá thêm <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <img src="https://www.asus.com/WebsitesBanner/VN/banners/i0m8aokbv2dngsqb/i0m8aokbv2dngsqb-2_0_desktop_2X.jpg?webp"
+                        alt="" id="product_item3">
+                    <div id="product_item_info_top">
+                        <h1 style="color: rgb(212, 190, 63);">TUF Gaming PUS</h1>
+                        <h2 style="color: rgb(252, 251, 247); font-weight: 400;">Thiết kế sử dụng lâu dài</h2><br>
+                        <a href="#" id="product_item_viewmore" style="color: white;">Khám phá thêm <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <img src="https://www.asus.com/WebsitesBanner/VN/banners/i0m8aokbv2dngsqb/i0m8aokbv2dngsqb-3_0_desktop_2X.jpg?webp"
+                        alt="" id="product_item4">
+                    <div id="product_item_info_top">
+                        <h1 style="color: rgb(224, 197, 41);">Tại nhà vẫn hiệu quả</h1>
+                        <h2 style="font-weight: 400;">Học tập, làm việc, sáng tạo và chơi game</h2><br>
+                        <a href="#" id="product_item_viewmore" style="color: black;">Khám phá thêm <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="container_event">
+            <h1>Chương trình và sự kiện</h1>
+            <a><span>Xem tất cả</span> <i class="fas fa-chevron-right"></i></a>
+            <br><br>
+            <div class="container_event_item">
+                <img src="https://www.asus.com/media/Odin/Websites/vn/SiteSetting/20211103114059.jpg?webp"
+                    alt=""><br><br>
+                <span>
+                    ĐÁNH GIÁ CỦA BẠN RẤT QUAN TRỌNG Cùng Asus trải nghiệm sản phẩm
+                </span>
+            </div>
+            <div class="container_event_item">
+                <img src="https://www.asus.com/media/Odin/Websites/vn/SiteSetting/20211018034032.jpg?webp"
+                    alt=""><br><br>
+                <span>
+                    ASUS hiện đã có Adobe creative cloud
+                </span>
+            </div>
+        </div>
+        <script src="./js.js"></script>
+    </div>
+
+    <div class="footer">
+        <div class="grid_footer">
+            <div class="footer_select_product">
+                <div class="learn_buy">
+                    <strong>Mua sắm và học tập</strong>
+                    <ul>
+                        <span>Máy tính xách tay</span>
+                        <li>Cá nhân</li>
+                        <li>Văn phòng</li>
+                        <li>Học tập</li>
+                        <li>Chơi game</li>
+                        <li>Sáng tạo</li>
+                    </ul>
+                    <ul>
+                        <span>Màn hình / Máy bàn</span>
+                        <li>Màn Hình</li>
+                        <li>All-in-One PCs</li>
+                        <li>Tower PCs</li>
+                        <li>Mini PCs</li>
+                    </ul>
+                    <ul>
+                        <span>Bo Mạch Chủ / Linh Kiện</span>
+                        <li>Bo Mạch Chủ</li>
+                        <li>Card Đồ Họa</li>
+                        <li>Tản Nhiệt</li>
+                        <li>Ổ Đĩa Quang</li>
+                    </ul>
+                    <ul>
+                        <span>Thiết Bị Mạng / IoT / Servers</span>
+                        <li>Hệ thống wifi phủ sóng toàn bộ căn nhà</li>
+                    </ul>
+                    <ul>
+                        <span>Phụ kiện</span>
+                        <li>Tai nghe và âm thanh</li>
+                    </ul>
+                </div>
+                <div class="search_more">
+                    <strong>Tìm hiểu thêm</strong>
+                    <ul>
+                        <li>Asus Design Center</li>
+                        <li>Automotive Solutions</li>
+                    </ul>
+                    <strong>Hỗ trợ</strong>
+                    <ul>
+                        <li>Email cho chúng tôi</li>
+                        <li>Kiểm tra tiến độ sửa chữa</li>
+                        <li>Tìm trung tâm dịch vụ</li>
+                        <li>Hệ thống phân phối sản phẩm <br>
+                            Máy tính xách tay</li>
+                        <li>Hệ thống phân phối sản phẩm <br>
+                            Doanh nghiệp</li>
+                        <li>Hệ thống phân phối sản phẩm <br>
+                            Linh kiện và phụ kiện</li>
+                        <li>Đăng kí sản phẩm</li>
+                        <li>Gọi cho chúng tôi </li>
+                        <li>Security Advisory</li>
+                        <li>MyASUS app</li>
+                        <li>ASUS Support Videos</li>
+                        <li>My Asus</li>
+                    </ul>
+                </div>
+                <div class="as_to_me">
+                    <strong>Về chúng tôi</strong>
+                    <ul>
+                        <li>Asus</li>
+                        <li>Tin tức</li>
+                        <li>Quan hệ đầu tư</li>
+                        <li>About CSR for global</li>
+                        <li>Press Room</li>
+                        <li>Cơ hội nghề nghiệp</li>
+                        <li>ASUSTOR Inc.</li>
+                        <li>ASUS Cloud Corporation</li>
+                        <li>UniMax Electronics Inc.</li>
+                    </ul>
+                </div>
+                <div class="network">
+                    <strong>Cộng đồng</strong>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr width="100%" color="gray">
+
+        <div class="copyright">
+            <p>Cover by Nguyễn Đức Minh</p>
+        </div>
+    </div>
+</body>
+
+</html>

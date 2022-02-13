@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <title>PC</title>
+</head>
+
+<body>
+    <header>
+        <div class="grid_header">
+            <div class="header_layerDesktop">
+                <div class="header_layerDesktop_img">
+                    <div>
+                        <img src="https://www.asus.com/media/Odin/images/header/rog-gray_h.svg"
+                            class="header_layerDesktop_img_space" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://www.asus.com/media/Odin/images/header/proArt-gray_h.svg"
+                            class="header_layerDesktop_img_space" alt="" />
+                    </div>
+                </div>
+
+                <div class="header_layerDesktop_text">
+                    <div>
+                        <a href="#">Gaming</a>
+                    </div>
+                    <div>
+                        <a href="#">Doanh nghiệp</a>
+                    </div>
+                </div>
+            </div>
+            <hr width="100%" style="height: 1px; color: #ece9e9;">
+
+            <div class="header_link_list">
+                <div class="logo">
+                    <a href="https://minh6301.github.io/demoProject/index">
+                        <img src="https://www.freepnglogos.com/uploads/logo-asus-png/asus-logo-hd-photo-15.png" alt="">
+
+                    </a>
+                </div>
+
+                <div class="header_link_list_item">
+                    <ul>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/tatcasanpham">Máy tính xách tay</a>
+                            <div class="header_link_list_item_show_product">
+                                <div class="list_item">
+                                    <div><span>Cá nhân</span>
+                                        <div class="list_item_show">
+                                            <strong>THEO NHU CẦU</strong>
+                                            <div>Mỏng nhẹ
+                                                <div class="list_item_show_product">
+                                                    <strong>THEO DÒNG</strong>
+                                                    <div>Tất cả</div>
+                                                    <div>Zenbook</div>
+                                                    <div>Vivobook</div>
+                                                    <div>Proart Studiobook</div>
+                                                    <div>Expert Book</div>
+                                                    <div>Laptop cơ bản</div>
+                                                </div>
+                                            </div>
+                                            <div>OLED Category</div>
+                                            <div>Tablet & 2-in-1 Laptop</div>
+                                            <div>Everyday use</div>
+
+                                        </div>
+                                    </div>
+                                    <div><span>Văn phòng</span>
+
+                                    </div>
+                                    <div><span>Sáng tạo</span></div>
+                                    <div><span>Học tập</span></div>
+                                    <div><span>Chơi game</span></div>
+                                    <div><span>Phần mềm</span></div>
+                                    <div><span>Technology / Innovations</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/phone">Điện thoại</a>
+
+                        </li>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/pc">Màn hình / Máy bàn</a>
+                        </li>
+                        <li>
+                            <a href="#">Bo mạch chủ / Linh kiện</a>
+                        </li>
+                        <li>
+                            <a href="#">Thiết Bị Mạng / IoT / Servers</a>
+                        </li>
+                        <li>
+                            <a href="#">Phụ kiện</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header_link_list_support">
+                    <ul>
+                        <li>
+                            <p>Mua hàng</p>
+                        </li>
+                        <li>
+                            <p>Hỗ trợ</p>
+                        </li>
+                        <li id="btn-search">
+                            <button onclick="btnSearch()">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </li>
+                        <li class="user_login">
+                            <a href="https://minh6301.github.io/demoProject/login"><i class="far fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search" id="search-text">
+                <div class="search-field">
+                    <button class="search-icon"><i class="fa fa-search"></i></button>
+                    <input type="text" class="search-input" placeholder="Tìm kiếm">
+                </div>
+            </div>
+    </header>
+    <hr width="100%" style="height: 1px; color: #e9e6e6;">
+
+    <div class="container">
+        <button onclick="outSearch()" id="block_container"></button>
+        <div class="select_pc">
+            <div class="grid_select_pc">
+                <div class="btn_next">
+                    <div>
+                        <span1><i class="fas fa-chevron-left"></i></span1>
+                    </div>
+                    <div>
+                        <span1><i class="fas fa-chevron-right"></i></span1>
+                    </div>
+                </div>
+                <section class="list_pc">
+                    <nav>
+                        <a href="">
+                            <img src="https://www.asus.com/media/Odin/websites/global/ProductLine/20200813115609/P_setting_xxx_0_90_end_80.png?webp"
+                                alt="">
+                            <br>
+                            <p>Toàn bộ màn hình</p>
+                        </a>
+                    </nav>
+                    <nav>
+                        <a href="">
+                            <img src="https://www.asus.com/media/Odin/websites/global/ProductLine/20200817043812/P_setting_xxx_0_90_end_80.png?webp"
+                                alt="">
+                            <p>Gaming</p>
+                        </a>
+
+                    </nav>
+                    <nav>
+                        <a href="">
+                            <img src="https://www.asus.com/media/Odin/websites/global/ProductLine/20200813114257/P_setting_xxx_0_90_end_80.png?webp"
+                                alt="">
+                            <p>
+                                ROG - Republic of Gamers
+                            </p>
+                        </a>
+
+                    </nav>
+                    <nav>
+                        <a href="">
+                            <img src="https://www.asus.com/media/Odin/websites/global/ProductLine/20200813114231/P_setting_xxx_0_90_end_80.png?webp"
+                                alt="">
+                            <p>TUF Gaming</p>
+                        </a>
+
+                    </nav>
+                    <nav>
+                        <a href="">
+                            <img src="https://www.asus.com/media/Odin/websites/global/ProductLine/20200813114156/P_setting_xxx_0_90_end_80.png?webp"
+                                alt="">
+                            <p>Pro Art</p>
+                        </a>
+
+                    </nav>
+                    <nav>
+                        <a href="">
+                            <img src="https://www.asus.com/media/Odin/websites/global/ProductLine/20200813114337/P_setting_xxx_0_90_end_80.png?webp"
+                                alt="">
+                            <p>ZenScreen</p>
+                        </a>
+
+                    </nav>
+                    <nav>
+                        <a href="">
+                            <img src="https://www.asus.com/media/Odin/websites/global/ProductLine/20200813114653/P_setting_xxx_0_90_end_80.png?webp"
+                                alt="">
+                            <p>Eye Care</p>
+                        </a>
+
+                    </nav>
+                    <nav>
+                        <a href="">
+                            <img src="https://www.asus.com/media/Odin/websites/global/ProductLine/20200813114426/P_setting_xxx_0_90_end_80.png?webp"
+                                alt="">
+                            <p>Cảm ứng</p>
+                        </a>
+                    </nav>
+                    <nav>
+                        <a href="">
+                            <img src="https://www.asus.com/media/Odin/websites/global/ProductLine/20200813114400/P_setting_xxx_0_90_end_80.png?webp"
+                                alt="">
+                            <p>Doanh nghiệp</p>
+                        </a>
+                    </nav>
+                </section>
+            </div>
+
+        </div><br>
+
+        <a href="#" class="study_windows">
+            <div>
+                <img src="https://dlcdnimgs.asus.com/images/MDA2022/blue/vi-vn.jpg" alt="">
+            </div>
+        </a>
+        <br><br>
+
+        <div class="list_product">
+            <div class="grid_list_product">
+                <div class="classify_laptop">
+                    <div class="filter_select">
+                        <div class="checkbox_size" onclick="btnFilterSize()">
+                            <label for="size">Theo kích thước</label>
+                            <span id="icon_filter_size"><i class='fas fa-minus'></i></span>
+                        </div>
+                        <div class="size" id="filter_size" style="display:block;">
+                            <div>
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1">17,9" và nhỏ hơn</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox2">
+                                <label for="checkbox2">18" - 22.9"</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox3">
+                                <label for="checkbox3">23" - 26.9"</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox4">
+                                <label for="checkbox4">27" - 30.9"</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox5">
+                                <label for="checkbox5">31" - 34.9"</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox6">
+                                <label for="checkbox6">Lớn hơn 35"</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter_select">
+                        <div class="checkbox_size" onclick="btnFilterList()">
+                            <label for="size">Theo dòng</label>
+                            <span id="icon_filter_list"><i class='fas fa-minus'></i></span>
+                        </div>
+                        <div class="size" id="filter_list" style="display:block;">
+                            <div>
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1">Gaming</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox2">
+                                <label for="checkbox2">ROG - Republic of Gamers</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox3">
+                                <label for="checkbox3">TUF Gaming</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox4">
+                                <label for="checkbox4">ProArt</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox5">
+                                <label for="checkbox5">ZenScreen</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox6">
+                                <label for="checkbox6">Eye Care</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox7">
+                                <label for="checkbox6">Cảm ứng</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox8">
+                                <label for="checkbox6">Doanh nghiệp</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter_select">
+                        <div class="checkbox_size" onclick="btnFilterResolution()">
+                            <label for="size">Độ phân giải</label>
+                            <span id="icon_filter_resolution"><i class='fas fa-minus'></i></span>
+                        </div>
+                        <div class="size" id="filter_resolution" style="display:block;">
+                            <div>
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1">4K UHD (3840 x 2160)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox2">
+                                <label for="checkbox2">3840 x 1080</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox3">
+                                <label for="checkbox3">3440 x 1440</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox4">
+                                <label for="checkbox4">WQHD (2560 x 1440)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox5">
+                                <label for="checkbox5">WUXGA (1920 x 1240)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox6">
+                                <label for="checkbox6">Full HD (1920 x 1080)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox7">
+                                <label for="checkbox6">1366 x 768</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter_select">
+                        <div class="checkbox_size" onclick="btnFilterRate()">
+                            <label for="size">Tỷ lệ màn hình</label>
+                            <span id="icon_filter_rate"><i class='fas fa-plus'></i></span>
+                        </div>
+                        <div class="size" id="filter_rate">
+                            <div>
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1">21:9</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox2">
+                                <label for="checkbox2">19:10</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox3">
+                                <label for="checkbox3">19:9</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all_product">
+                    <div>
+                        <div class="present_pc">
+                            <h1>Gaming</h1><br>
+                            <p>ASUS tiếp tục là hãng tiên phong trong các công nghệ tiên tiến, từ những chiếc màn hình
+                                chơi game 144hz đầu tiên trên thế giới cho game thủ vào năm 2012, màn hình độ phân giải
+                                1440p hỗ trợ công nghệ Nvidia G-Sync đầu tiên vào năm 2014. Trong năm 2020, công ty đã
+                                tiếp tục ra mắt những sản phẩm mới như 360Hz, 4K HDR với tần số quét 144Hz và tăng kích
+                                thước màn hình lên tới 65 inch trong khi vẫn giữ tần số quét 120Hz.</p>
+                            <br>
+                            <a href="#">
+                                <div class="view_more">
+                                    <p>Xem tất cả Gaming</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="show_product_pc">
+                            <div class="image_pc">
+                                <img src="https://www.asus.com/media/Odin/websites/global/ProductLine/20200817043812/P_setting_xxx_0_90_end_185.png?webp"
+                                    alt="">
+                            </div>
+                            <div class="title">
+                                <p>ROG Phone</p>
+                                <p>
+                                    <a href="#">Xem tất cả ROG Phone <i class="fas fa-angle-right"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <hr color="gray" style="height: 1px;">
+                    </div>
+                    <div>
+                        <div class="present_pc">
+                            <h1>ROG - Republic of Gamers</h1><br>
+                            <p>Republic of Gamer (ROG) có kinh nghiệm hơn một thập kỷ trong việc phát triển những sản
+                                phẩm màn hình vượt trội nhằm đáp ứng nhu cầu ngày càng cao của các game thủ. Dòng sản
+                                phẩm màn hình ROG Swift chính là những sản phẩm đỉnh cao giúp định hình lại ngành công
+                                nghiệp game.</p>
+                            <br>
+                            <a href="#">
+                                <div class="view_more">
+                                    <p>Xem tất cả ROG - Republic of Gamers</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="show_product_pc">
+                            <div class="image_pc">
+                                <img src="https://www.asus.com/media/Odin/websites/global/ProductLine/20200813114257/P_setting_xxx_0_90_end_185.png?webp"
+                                    alt="">
+                            </div>
+                            <div class="title">
+                                <p>ROG - Republic of Gamers</p>
+                                <p>
+                                    <a href="#">Xem tất cả ROG - Republic of Gamers <i
+                                            class="fas fa-angle-right"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <hr color="gray" style="height: 1px;">
+                    </div>
+                    <div>
+                        <div class="present_pc">
+                            <h1>TUF Gaming</h1><br>
+                            <p>Màn hình TUF Gaming là lựa chọn lý tưởng cho các game thủ với rất nhiều các tính năng hữu
+                                ích khi chơi game nhưng có mức giá cả hợp lý. Những khuôn hình đẹp hiện đã nằm trong tầm
+                                tay bạn.</p>
+                            <br>
+                            <a href="#">
+                                <div class="view_more">
+                                    <p>Xem tất cả TUF Gaming</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="show_product_pc">
+                            <div class="image_pc">
+                                <img src="https://www.asus.com/media/global/gallery/hzlrejlm7cagzkd8_setting_xxx_0_90_end_185.png"
+                                    alt="">
+                            </div>
+                            <div class="title">
+                                <p>TUF Gaming</p>
+                                <p>
+                                    <a href="#">Xem tất cả TUF Gaming <i class="fas fa-angle-right"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <hr color="gray" style="height: 1px;">
+                    </div>
+                    <div>
+                        <div class="present_pc">
+                            <h1>ProArt</h1><br>
+                            <p>Mục tiêu của dòng màn hình ASUS ProArt là cung cấp những công nghệ tiên tiến nhất để khơi
+                                nguồn trí tưởng tượng của người sáng tạo nội dung ở khắp mọi nơi. Với các công nghệ tiên
+                                tiến như đèn nền mini-LED, tấm màn hình OLED, và công nghệ thông minh của ASUS HDR, màn
+                                hình ProArt là giải pháp cho việc tạo ra những kiệt tác.</p>
+                            <br>
+                            <a href="#">
+                                <div class="view_more">
+                                    <p>Xem tất cả ProArt</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="show_product_pc">
+                            <div class="image_pc">
+                                <img src="https://www.asus.com/media/Odin/websites/global/ProductLine/20200817043812/P_setting_xxx_0_90_end_185.png?webp"
+                                    alt="">
+                            </div>
+                            <div class="title">
+                                <p>ProArt</p>
+                                <p>
+                                    <a href="#">Xem tất cả ProArt <i class="fas fa-angle-right"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <hr color="gray" style="height: 1px;">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="./pc.js"></script>
+    </div>
+    <hr width="100%">
+
+    <div class="footer">
+        <div class="grid_footer">
+            <div class="footer_select_product">
+                <div class="learn_buy">
+                    <strong>Mua sắm và học tập</strong>
+                    <ul>
+                        <span>Máy tính xách tay</span>
+                        <li>Cá nhân</li>
+                        <li>Văn phòng</li>
+                        <li>Học tập</li>
+                        <li>Chơi game</li>
+                        <li>Sáng tạo</li>
+                    </ul>
+                    <ul>
+                        <span>Màn hình / Máy bàn</span>
+                        <li>Màn Hình</li>
+                        <li>All-in-One PCs</li>
+                        <li>Tower PCs</li>
+                        <li>Mini PCs</li>
+                    </ul>
+                    <ul>
+                        <span>Bo Mạch Chủ / Linh Kiện</span>
+                        <li>Bo Mạch Chủ</li>
+                        <li>Card Đồ Họa</li>
+                        <li>Tản Nhiệt</li>
+                        <li>Ổ Đĩa Quang</li>
+                    </ul>
+                    <ul>
+                        <span>Thiết Bị Mạng / IoT / Servers</span>
+                        <li>Hệ thống wifi phủ sóng toàn bộ căn nhà</li>
+                    </ul>
+                    <ul>
+                        <span>Phụ kiện</span>
+                        <li>Tai nghe và âm thanh</li>
+                    </ul>
+                </div>
+                <div class="search_more">
+                    <strong>Tìm hiểu thêm</strong>
+                    <ul>
+                        <li>Asus Design Center</li>
+                        <li>Automotive Solutions</li>
+                    </ul>
+                    <strong>Hỗ trợ</strong>
+                    <ul>
+                        <li>Email cho chúng tôi</li>
+                        <li>Kiểm tra tiến độ sửa chữa</li>
+                        <li>Tìm trung tâm dịch vụ</li>
+                        <li>Hệ thống phân phối sản phẩm <br>
+                            Máy tính xách tay</li>
+                        <li>Hệ thống phân phối sản phẩm <br>
+                            Doanh nghiệp</li>
+                        <li>Hệ thống phân phối sản phẩm <br>
+                            Linh kiện và phụ kiện</li>
+                        <li>Đăng kí sản phẩm</li>
+                        <li>Gọi cho chúng tôi </li>
+                        <li>Security Advisory</li>
+                        <li>MyASUS app</li>
+                        <li>ASUS Support Videos</li>
+                        <li>My Asus</li>
+                    </ul>
+                </div>
+                <div class="as_to_me">
+                    <strong>Về chúng tôi</strong>
+                    <ul>
+                        <li>Asus</li>
+                        <li>Tin tức</li>
+                        <li>Quan hệ đầu tư</li>
+                        <li>About CSR for global</li>
+                        <li>Press Room</li>
+                        <li>Cơ hội nghề nghiệp</li>
+                        <li>ASUSTOR Inc.</li>
+                        <li>ASUS Cloud Corporation</li>
+                        <li>UniMax Electronics Inc.</li>
+                    </ul>
+                </div>
+                <div class="network">
+                    <strong>Cộng đồng</strong>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr width="100%" color="gray">
+
+        <div class="copyright">
+            <p>Cover by Nguyễn Đức Minh</p>
+        </div>
+    </div>
+</body>
+
+</html>

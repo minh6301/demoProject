@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="grid_header">
+            <div class="header_layerDesktop">
+                <div class="header_layerDesktop_img">
+                    <div>
+                        <img src="https://www.asus.com/media/Odin/images/header/rog-gray_h.svg"
+                            class="header_layerDesktop_img_space" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://www.asus.com/media/Odin/images/header/proArt-gray_h.svg"
+                            class="header_layerDesktop_img_space" alt="" />
+                    </div>
+                </div>
+
+                <div class="header_layerDesktop_text">
+                    <div>
+                        <a href="#">Gaming</a>
+                    </div>
+                    <div>
+                        <a href="#">Doanh nghiệp</a>
+                    </div>
+                </div>
+            </div>
+            <hr width="100%" style="height: 1px; color: #ece9e9;">
+
+            <div class="header_link_list">
+                <div class="logo">
+                    <a href="https://minh6301.github.io/demoProject/index">
+                        <img src="https://www.freepnglogos.com/uploads/logo-asus-png/asus-logo-hd-photo-15.png" alt="">
+
+                    </a>
+                </div>
+
+                <div class="header_link_list_item">
+                    <ul>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/tatcasanpham">Máy tính xách tay</a>
+                            <div class="header_link_list_item_show_product">
+                                <div class="list_item">
+                                    <div><span>Cá nhân</span>
+                                        <div class="list_item_show">
+                                            <strong>THEO NHU CẦU</strong>
+                                            <div>Mỏng nhẹ
+                                                <div class="list_item_show_product">
+                                                    <strong>THEO DÒNG</strong>
+                                                    <div>Tất cả</div>
+                                                    <div>Zenbook</div>
+                                                    <div>Vivobook</div>
+                                                    <div>Proart Studiobook</div>
+                                                    <div>Expert Book</div>
+                                                    <div>Laptop cơ bản</div>
+                                                </div>
+                                            </div>
+                                            <div>OLED Category</div>
+                                            <div>Tablet & 2-in-1 Laptop</div>
+                                            <div>Everyday use</div>
+
+                                        </div>
+                                    </div>
+                                    <div><span>Văn phòng</span>
+
+                                    </div>
+                                    <div><span>Sáng tạo</span></div>
+                                    <div><span>Học tập</span></div>
+                                    <div><span>Chơi game</span></div>
+                                    <div><span>Phần mềm</span></div>
+                                    <div><span>Technology / Innovations</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/phone">Điện thoại</a>
+
+                        </li>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/pc">Màn hình / Máy bàn</a>
+                        </li>
+                        <li>
+                            <a href="#">Bo mạch chủ / Linh kiện</a>
+                        </li>
+                        <li>
+                            <a href="#">Thiết Bị Mạng / IoT / Servers</a>
+                        </li>
+                        <li>
+                            <a href="#">Phụ kiện</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header_link_list_support">
+                    <ul>
+                        <li>
+                            <p>Mua hàng</p>
+                        </li>
+                        <li>
+                            <p>Hỗ trợ</p>
+                        </li>
+                        <li id="btn-search">
+                            <button onclick="btnSearch()">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </li>
+                        <li class="user_login">
+                            <a href="https://minh6301.github.io/demoProject/login"><i class="far fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search" id="search-text">
+                <div class="search-field">
+                    <button class="search-icon"><i class="fa fa-search"></i></button>
+                    <input type="text" class="search-input" placeholder="Tìm kiếm">
+                </div>
+            </div>
+    </header>
+    <hr width="100%" style="height: 1px; color: #e9e6e6;">
+
+    <div class="container">
+        <button onclick="outSearch()" id="block_container"></button>
+        <div class="grid_container">
+            <div class="present_sign-in">
+                <div>
+                    <img src="https://account.asus.com/img/top-image.png" alt="">
+                    <br>
+                    <h3>Trở thành hội viên Asus</h3>
+                </div>
+                <div>
+                    <a href="#">
+                        <div>
+                            <p>Đăng ký Ngay <i class="fas fa-chevron-circle-right"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="article">
+                    <p>Ngoài những chương trình giảm giá lớn nhất, thông tin khuyến mãi nóng hổi và tin tức mới nhất về
+                        ASUS, bạn cũng sẽ được tận hưởng dịch vụ hỗ trợ kỹ thuật tuyệt vời nhằm tăng cường trải nghiệm
+                        của bạn khi sử dụng sản phẩm của chúng tôi.</p>
+                </div>
+                <div class="service">
+                    <div>
+                        <div>
+                            <img src="https://account.asus.com/img/s-icon1.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Dịch vụ cá nhân</h4>
+                            <span>Tận hưởng trung tâm dịch vụ thông tin cá nhân, dịch vụ hậu mãi và chăm sóc khách hàng
+                                toàn diện nhất.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://account.asus.com/img/s-icon2.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Lưu trữ trực tuyến</h4>
+                            <span>5GB dung lượng miễn phí trên Đám mây</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://account.asus.com/img/s-icon3.png" alt="">
+                        </div>
+                        <div>
+                            <h4>eShop</h4>
+                            <span>Thông tin mới nhất về các phụ kiện và sản phẩm tân trang lại</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login">
+                <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+                <form action="">
+                    <div>
+                        <label for="">Your Email / Phone</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Password</label><br>
+                        <input type="password">
+                    </div>
+                    <div class="btn_login">
+                        <input type="submit" value="Đăng nhập">
+                    </div>
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Nhớ tôi</label>
+                    <div class="forgot_password">
+                        <div>
+                            <a href="#">
+                                <span>Đăng ký ngay</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span>Quên mật khẩu của bạn ?</span>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+                <hr>
+                <div class="login_with_netword">
+                    <span>Bạn có thể dùng tài khoản và mật khẩu bên dưới để đăng nhập trực tiếp như thành
+                        viên.</span>
+                    <div>
+                        <a>
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                    </div>
+                    <div>
+                        <a>
+                            <i class="fab fa-google"></i> Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js.js"></script>
+    </div>
+</body>
+
+</html>

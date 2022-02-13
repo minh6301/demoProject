@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./detail.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="grid_header">
+            <div class="header_layerDesktop">
+                <div class="header_layerDesktop_img">
+                    <div>
+                        <img src="https://www.asus.com/media/Odin/images/header/rog-gray_h.svg"
+                            class="header_layerDesktop_img_space" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://www.asus.com/media/Odin/images/header/proArt-gray_h.svg"
+                            class="header_layerDesktop_img_space" alt="" />
+                    </div>
+                </div>
+
+                <div class="header_layerDesktop_text">
+                    <div>
+                        <a href="#">Gaming</a>
+                    </div>
+                    <div>
+                        <a href="#">Doanh nghiệp</a>
+                    </div>
+                </div>
+            </div>
+            <hr width="100%" style="height: 1px; color: #ece9e9;">
+
+            <div class="header_link_list">
+                <div class="logo">
+                    <a href="https://minh6301.github.io/demoProject/index">
+                        <img src="https://www.freepnglogos.com/uploads/logo-asus-png/asus-logo-hd-photo-15.png" alt="">
+
+                    </a>
+                </div>
+
+                <div class="header_link_list_item">
+                    <ul>
+                        <li>
+                            <a href="http://127.0.0.1:5500/html/Zenbook.html">Máy tính xách tay</a>
+                            <div class="header_link_list_item_show_product">
+                                <div class="list_item">
+                                    <div><span>Cá nhân</span>
+                                        <div class="list_item_show">
+                                            <strong>THEO NHU CẦU</strong>
+                                            <div>Mỏng nhẹ
+                                                <div class="list_item_show_product">
+                                                    <strong>THEO DÒNG</strong>
+                                                    <div>Tất cả</div>
+                                                    <div>Zenbook</div>
+                                                    <div>Vivobook</div>
+                                                    <div>Proart Studiobook</div>
+                                                    <div>Expert Book</div>
+                                                    <div>Laptop cơ bản</div>
+                                                </div>
+                                            </div>
+                                            <div>OLED Category</div>
+                                            <div>Tablet & 2-in-1 Laptop</div>
+                                            <div>Everyday use</div>
+
+                                        </div>
+                                    </div>
+                                    <div><span>Văn phòng</span>
+
+                                    </div>
+                                    <div><span>Sáng tạo</span></div>
+                                    <div><span>Học tập</span></div>
+                                    <div><span>Chơi game</span></div>
+                                    <div><span>Phần mềm</span></div>
+                                    <div><span>Technology / Innovations</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/phone">Điện thoại</a>
+                        </li>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/pc">Màn hình / Máy bàn</a>
+                        </li>
+                        <li>
+                            <a href="#">Bo mạch chủ / Linh kiện</a>
+                        </li>
+                        <li>
+                            <a href="#">Thiết Bị Mạng / IoT / Servers</a>
+                        </li>
+                        <li>
+                            <a href="#">Phụ kiện</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header_link_list_support">
+                    <ul>
+                        <li>
+                            <p>Mua hàng</p>
+                        </li>
+                        <li>
+                            <p>Hỗ trợ</p>
+                        </li>
+                        <li id="btn-search">
+                            <button onclick="btnSearch()">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </li>
+                        <li class="user_login">
+                            <a href="https://minh6301.github.io/demoProject/login"><i class="far fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <hr width="100%" style="height: 1px; color: #e9e6e6;">
+
+    <div class="container">
+        <div class="grid_container">
+            <div class="detail_product_card">
+                <div class="image">
+                    <div class="select_image">
+                        <ul>
+                            <li class="select_product_image active">
+                                <img src="https://dlcdnwebimgs.asus.com/gain/2a37f422-b5d3-4c77-b8ac-034e1380c5f1/w80"
+                                    alt="">
+                            </li>
+                            <li class="select_product_image ">
+                                <img src="https://dlcdnwebimgs.asus.com/gain/101212fc-bf0a-4af3-836f-ba3e296ced65/w80"
+                                    alt="">
+                            </li>
+                            <li class="select_product_image ">
+                                <img src="https://dlcdnwebimgs.asus.com/gain/971ee4f0-39a4-42d1-ad03-618594a6bbab/w80"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="view_image">
+                        <ul>
+                            <li class="view active">
+                                <img src="https://dlcdnwebimgs.asus.com/gain/2a37f422-b5d3-4c77-b8ac-034e1380c5f1/w800"
+                                    alt="">
+                            </li>
+                            <li class="view ">
+                                <img src="https://dlcdnwebimgs.asus.com/gain/101212fc-bf0a-4af3-836f-ba3e296ced65/w800"
+                                    alt="">
+                            </li>
+                            <li class="view ">
+                                <img src="https://dlcdnwebimgs.asus.com/gain/971ee4f0-39a4-42d1-ad03-618594a6bbab/w800"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br><br>
+
+                <div class="product_card">
+                    <div>
+                        <h3>Zenbook Pro Duo UX581</h3>
+                    </div>
+                    <div class="color">
+                        <div>
+                            <span>Màu sắc : </span>
+                        </div>
+                        <div class="color1 select_color active">
+                            <span></span>
+                        </div>
+                        <div class="color2 select_color">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="certain_parameter">
+                        <div>
+                            <h4>THÔNG SỐ TÓM TẮT</h4>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Hệ điều hành : <br>
+                                    Windows 10 Home - ASUS khuyến nghị Windows 10 Pro cho doanh nghiệp <br>
+                                    Nâng cấp miễn phí lên Windows 11¹ (khi có sẵn, chi tiết bên dưới)
+                                </li>
+                                <li>Bộ vi xử lý : <br>
+                                    Bộ xử lý Intel® Core™ i7-10750H 2,6 GHz (12M Cache, lên đến 5,0 GHz, 6
+                                    nhân) <br>
+                                    Bộ xử lý Intel® Core™ i9-10980HK 2,4 GHz (16M Cache, lên đến 5,3 GHz, 8 nhân)</li>
+                                <li>Đồ họa : Đồ họa Intel® UHD, NVIDIA® GeForce® RTX 2060, 6GB GDDR6</li>
+                                <li>Màn hình : 15,6 inch, 4K UHD (3840 x 2160) 16:9, 400nits, Dải màu DCI-P3 100%, Đạt
+                                    chuẩn PANTONE Validated, Màn hình gương, Màn hình Cảm ứng, Có hỗ trợ bút Stylus</li>
+                                <li>Ổ lưu trữ : SSD Hiệu suất 1TB M.2 NVMe™ PCIe® 3.0</li>
+                            </ul>
+                            <a href="#parameter">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+
+            <div class="parameter" href="#parameter">
+                <div class="parameter_show">
+                    <table>
+                        <h4>THÔNG SỐ KỸ THUẬT</h4><br>
+                        <tr>
+                            <th id="parameter_name">Màu sắc</th>
+                            <td id="parameter_detail">Đen, Xanh thiên thanh</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Hệ điều hành</th>
+                            <td id="parameter_detail">Windows 10 Home - ASUS khuyến nghị Windows 10 Pro cho doanh nghiệp
+                                <br>
+                                Nâng cấp miễn phí lên Windows 11¹ (khi có sẵn, chi tiết bên dưới)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Bộ vi sử lý</th>
+                            <td id="parameter_detail">Bộ xử lý Intel® Core™ i7-10750H 2,6 GHz (12M Cache, lên đến 5,0
+                                GHz, 6 nhân) <br>
+                                Bộ xử lý Intel® Core™ i9-10980HK 2,4 GHz (16M Cache, lên đến 5,3 GHz, 8 nhân)</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Đồ họa</th>
+                            <td id="parameter_detail">Đồ họa Intel® UHD, NVIDIA® GeForce® RTX 2060, 6GB GDDR6</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Màn hình</th>
+                            <td id="parameter_detail">15,6 inch, 4K UHD (3840 x 2160) 16:9, 400nits, Dải màu DCI-P3
+                                100%, Đạt chuẩn PANTONE Validated, Màn hình gương, Màn hình Cảm ứng, Có hỗ trợ bút
+                                Stylus</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Màn hình phụ</th>
+                            <td id="parameter_detail">
+                                ScreenPad™ Plus (Bút cảm ứng Hỗ trợ Tấm nền cấp IPS 14" 3840 x 1100 (4K))</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Memory</th>
+                            <td id="parameter_detail">32GB DDR4 tích hợp, Bộ nhớ tối đa lên tới:32GB</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Ổ lưu trữ</th>
+                            <td id="parameter_detail">SSD Hiệu suất 1TB M.2 NVMe™ PCIe® 3.0</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Cổng kết nối I/O</th>
+                            <td id="parameter_detail">
+                                2x USB 3.2 Thế hệ 2 Loại A <br>
+                                1x Thunderbolt™ 3 hỗ trợ màn hình / power delivery <br>
+                                1x HDMI 2.0a <br>
+                                1x Giắc Âm thanh Kết hợp 3,5 mm</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Bàn phím và chuột cảm ứng</th>
+                            <td id="parameter_detail">
+                                Bàn phím Chiclet Có đèn nền với phím Số <br>
+                                Hành trình phím 1,4mm <br>
+                                Hỗ trợ NumberPad
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Camera</th>
+                            <td id="parameter_detail">Máy ảnh HD 720p</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Âm thanh</th>
+                            <td id="parameter_detail">
+                                Loa tích hợp <br>
+                                Micrô array tích hợp <br>
+                                harman/kardon (Cao cấp) <br>
+                                có hỗ trợ nhận dạng giọng nói Alexa và Cortana
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Mạng và kết nối</th>
+                            <td id="parameter_detail">
+                                Wi-Fi 6(802.11ax)+Bluetooth 5.0 (Hai băng tần) 2*2
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Pin</th>
+                            <td id="parameter_detail">71WHrs, 4S2P, Li-ion 8 pin</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Bộ nguồn</th>
+                            <td id="parameter_detail">ø6,0, Bộ đổi nguồn AC 230W, Đầu ra: 19,5V DC, 11,8A, 230W, Đầu
+                                vào: 100~240V AC 50/60Hz phổ thông</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Trọng lượng</th>
+                            <td id="parameter_detail">2.50 kg (5.51 lbs)</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Kích thước (W x D x H)</th>
+                            <td id="parameter_detail">35.60 x 22.40 x 2.30 ~ 2.40 cm (14.02" x 8.82" x 0.91" ~ 0.94")
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Ứng dụng tích hợp</th>
+                            <td id="parameter_detail">
+                                MyASUS <br>
+                                ScreenXpert
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Các tính năng của MyASUS</th>
+                            <td id="parameter_detail">
+                                AppDeals,
+                                Chỉnh tốc độ quạt,
+                                Splendid,
+                                Tru2Life,
+                                Khóa phím chức năng,
+                                Liên kết với MyASUS
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Microsoft Office</th>
+                            <td id="parameter_detail">Bản dùng thử 1 tháng cho khách hàng Microsoft 365 mới. Cần có thẻ
+                                tín dụng.</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Đạt chuẩn quân đội</th>
+                            <td id="parameter_detail">Tiêu chuẩn cấp quân đội US MIL-STD 810G</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Bảo mật</th>
+                            <td id="parameter_detail">
+                                Mô-đun Nền tảng Đáng tin cậy (Firmware TPM) <br>
+                                Bản dùng thử 30 ngày McAfee LiveSafe™ <br>
+                                IR webcam có hỗ trợ Windows Hello</td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Bộ sản phẩm và phụ kiện tiêu chuẩn (Tùy chọn)</th>
+                            <td id="parameter_detail">
+                                Chân đế <br>
+                                Bút cảm ứng <br>
+                                Vỏ mặt trên <br>
+                                Phụ kiện kèm theo khác nhau tùy thuộc vào từng quốc gia và vùng lãnh thổ. Vui lòng kiểm
+                                tra với nhà bán lẻ tại địa phương của ASUS để biết chi tiết.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="parameter_name">Từ chối trách nhiệm</th>
+                            <td id="parameter_detail">¹Bản nâng cấp Windows 11 sẽ được cung cấp cho các thiết bị đủ điều
+                                kiện vào cuối năm 2021 đến năm 2022. Thời gian sẽ khác nhau tùy theo thiết bị. Một số
+                                tính năng nhất định yêu cầu phần cứng cụ thể (xem thêm: aka.ms/windows11-spec).</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div class="concern">
+                    <div>
+                        <h3>Sản phẩm liên quan</h3>
+                    </div>
+                    <div class="product_concern">
+                        <img src="https://dlcdnwebimgs.asus.com/gain/101212fc-bf0a-4af3-836f-ba3e296ced65/w185/fwebp"
+                            alt="">
+                        <div>
+                            <span>Zenbook Pro Duo UX581</span>
+                        </div>
+                    </div>
+                    <div class="product_concern">
+                        <img src="https://dlcdnwebimgs.asus.com/gain/101212fc-bf0a-4af3-836f-ba3e296ced65/w185/fwebp"
+                            alt="">
+                        <div>
+                            <span>Zenbook Pro Duo UX581</span>
+                        </div>
+                    </div>
+                    <div class="product_concern">
+                        <img src="https://dlcdnwebimgs.asus.com/gain/101212fc-bf0a-4af3-836f-ba3e296ced65/w185/fwebp"
+                            alt="">
+                        <div>
+                            <span>Zenbook Pro Duo UX581</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="./detail.js"></script>
+    </div>
+
+
+    <div class="footer">
+        <div class="grid_footer">
+            <div class="footer_select_product">
+                <div class="learn_buy">
+                    <strong>Mua sắm và học tập</strong>
+                    <ul>
+                        <span>Máy tính xách tay</span>
+                        <li>Cá nhân</li>
+                        <li>Văn phòng</li>
+                        <li>Học tập</li>
+                        <li>Chơi game</li>
+                        <li>Sáng tạo</li>
+                    </ul>
+                    <ul>
+                        <span>Màn hình / Máy bàn</span>
+                        <li>Màn Hình</li>
+                        <li>All-in-One PCs</li>
+                        <li>Tower PCs</li>
+                        <li>Mini PCs</li>
+                    </ul>
+                    <ul>
+                        <span>Bo Mạch Chủ / Linh Kiện</span>
+                        <li>Bo Mạch Chủ</li>
+                        <li>Card Đồ Họa</li>
+                        <li>Tản Nhiệt</li>
+                        <li>Ổ Đĩa Quang</li>
+                    </ul>
+                    <ul>
+                        <span>Thiết Bị Mạng / IoT / Servers</span>
+                        <li>Hệ thống wifi phủ sóng toàn bộ căn nhà</li>
+                    </ul>
+                    <ul>
+                        <span>Phụ kiện</span>
+                        <li>Tai nghe và âm thanh</li>
+                    </ul>
+                </div>
+                <div class="search_more">
+                    <strong>Tìm hiểu thêm</strong>
+                    <ul>
+                        <li>Asus Design Center</li>
+                        <li>Automotive Solutions</li>
+                    </ul>
+                    <strong>Hỗ trợ</strong>
+                    <ul>
+                        <li>Email cho chúng tôi</li>
+                        <li>Kiểm tra tiến độ sửa chữa</li>
+                        <li>Tìm trung tâm dịch vụ</li>
+                        <li>Hệ thống phân phối sản phẩm <br>
+                            Máy tính xách tay</li>
+                        <li>Hệ thống phân phối sản phẩm <br>
+                            Doanh nghiệp</li>
+                        <li>Hệ thống phân phối sản phẩm <br>
+                            Linh kiện và phụ kiện</li>
+                        <li>Đăng kí sản phẩm</li>
+                        <li>Gọi cho chúng tôi </li>
+                        <li>Security Advisory</li>
+                        <li>MyASUS app</li>
+                        <li>ASUS Support Videos</li>
+                        <li>My Asus</li>
+                    </ul>
+                </div>
+                <div class="as_to_me">
+                    <strong>Về chúng tôi</strong>
+                    <ul>
+                        <li>Asus</li>
+                        <li>Tin tức</li>
+                        <li>Quan hệ đầu tư</li>
+                        <li>About CSR for global</li>
+                        <li>Press Room</li>
+                        <li>Cơ hội nghề nghiệp</li>
+                        <li>ASUSTOR Inc.</li>
+                        <li>ASUS Cloud Corporation</li>
+                        <li>UniMax Electronics Inc.</li>
+                    </ul>
+                </div>
+                <div class="network">
+                    <strong>Cộng đồng</strong>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr width="100%" color="gray">
+
+        <div class="copyright">
+            <p>Cover by Nguyễn Đức Minh</p>
+        </div>
+    </div>
+</body>
+
+</html>

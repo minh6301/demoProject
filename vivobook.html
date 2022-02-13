@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./laptop.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="grid_header">
+            <div class="header_layerDesktop">
+                <div class="header_layerDesktop_img">
+                    <div>
+                        <img src="https://www.asus.com/media/Odin/images/header/rog-gray_h.svg"
+                            class="header_layerDesktop_img_space" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://www.asus.com/media/Odin/images/header/proArt-gray_h.svg"
+                            class="header_layerDesktop_img_space" alt="" />
+                    </div>
+                </div>
+
+                <div class="header_layerDesktop_text">
+                    <div>
+                        <a href="#">Gaming</a>
+                    </div>
+                    <div>
+                        <a href="#">Doanh nghiệp</a>
+                    </div>
+                </div>
+            </div>
+            <hr width="100%" style="height: 1px; color: #ece9e9;">
+
+            <div class="header_link_list">
+                <div class="logo">
+                    <a href="https://minh6301.github.io/demoProject/index">
+                        <img src="https://www.freepnglogos.com/uploads/logo-asus-png/asus-logo-hd-photo-15.png" alt="">
+
+                    </a>
+                </div>
+
+                <div class="header_link_list_item">
+                    <ul>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/tatcasanpham">Máy tính xách tay</a>
+                            <div class="header_link_list_item_show_product">
+                                <div class="list_item">
+                                    <div><span>Cá nhân</span>
+                                        <div class="list_item_show">
+                                            <strong>THEO NHU CẦU</strong>
+                                            <div>Mỏng nhẹ
+                                                <div class="list_item_show_product">
+                                                    <strong>THEO DÒNG</strong>
+                                                    <div>Tất cả</div>
+                                                    <div>Zenbook</div>
+                                                    <div>Vivobook</div>
+                                                    <div>Proart Studiobook</div>
+                                                    <div>Expert Book</div>
+                                                    <div>Laptop cơ bản</div>
+                                                </div>
+                                            </div>
+                                            <div>OLED Category</div>
+                                            <div>Tablet & 2-in-1 Laptop</div>
+                                            <div>Everyday use</div>
+
+                                        </div>
+                                    </div>
+                                    <div><span>Văn phòng</span>
+
+                                    </div>
+                                    <div><span>Sáng tạo</span></div>
+                                    <div><span>Học tập</span></div>
+                                    <div><span>Chơi game</span></div>
+                                    <div><span>Phần mềm</span></div>
+                                    <div><span>Technology / Innovations</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/phone">Điện thoại</a>
+
+                        </li>
+                        <li>
+                            <a href="https://minh6301.github.io/demoProject/pc">Màn hình / Máy bàn</a>
+                        </li>
+                        <li>
+                            <a href="#">Bo mạch chủ / Linh kiện</a>
+                        </li>
+                        <li>
+                            <a href="#">Thiết Bị Mạng / IoT / Servers</a>
+                        </li>
+                        <li>
+                            <a href="#">Phụ kiện</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header_link_list_support">
+                    <ul>
+                        <li>
+                            <p>Mua hàng</p>
+                        </li>
+                        <li>
+                            <p>Hỗ trợ</p>
+                        </li>
+                        <li id="btn-search">
+                            <button onclick="btnSearch()">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </li>
+                        <li class="user_login">
+                            <a href="https://minh6301.github.io/demoProject/login"><i class="far fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search" id="search-text">
+                <div class="search-field">
+                    <button class="search-icon"><i class="fa fa-search"></i></button>
+                    <input type="text" class="search-input" placeholder="Tìm kiếm">
+                </div>
+            </div>
+    </header>
+    <hr width="100%" style="height: 1px; color: #e9e6e6;">
+
+    <div class="container">
+        <button onclick="outSearch()" id="block_container"></button>
+        <div class="select_laptop">
+            <div class="grid_select_laptop">
+                <div>
+                    <a href="https://minh6301.github.io/demoProject/tatcasanpham">
+                        <img src="https://www.asus.com/media/Odin/Websites/global/Series/9/P_setting_xxx_0_90_end_80.png?webp"
+                            alt="">
+                        <br>
+                        <p>Tất cả</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://minh6301.github.io/demoProject/zenbook">
+                        <img src="https://www.asus.com/media/Odin/Websites/global/Series/11/P_setting_xxx_0_90_end_80.png?webp"
+                            alt="">
+                        <p>Zenbook</p>
+                        <span>Cao cấp và di động</span>
+                    </a>
+
+                </div>
+                <div>
+                    <a href="https://minh6301.github.io/demoProject/vivobook">
+                        <img src="https://www.asus.com/media/Odin/Websites/global/Series/12/P_setting_xxx_0_90_end_80.png?webp"
+                            alt="">
+                        <p>Vivobook</p>
+                        <span>Dám khác biệt</span>
+                    </a>
+
+                </div>
+                <div>
+                    <a href="http://127.0.0.1:5500/html/studiobook.html#">
+                        <img src="https://www.asus.com/media/Odin/Websites/global/Series/10/P_setting_xxx_0_90_end_80.png?webp"
+                            alt="">
+                        <p>ProArt Studiobook</p>
+                        <span>Power Up Your Imagination</span>
+                    </a>
+
+                </div>
+                <div>
+                    <a href="https://minh6301.github.io/demoProject/expertbook">
+                        <img src="https://www.asus.com/media/Odin/Websites/global/ProductLine/20201211015930/P_setting_xxx_0_90_end_80.png?webp"
+                            alt="">
+                        <p>ExpertBook</p>
+                        <span>Laptop doanh nhân</span>
+                    </a>
+
+                </div>
+                <div>
+                    <a href="https://minh6301.github.io/demoProject/laptopcoban">
+                        <img src="https://www.asus.com/media/Odin/Websites/global/Series/14/P_setting_xxx_0_90_end_80.png?webp"
+                            alt="">
+                        <p>Laptop cơ bản</p>
+                        <span>Học tập & giải trí</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div><br>
+
+        <a href="#" class="study_windows">
+            <div>
+                <img src="https://dlcdnimgs.asus.com/images/MDA2022/blue/vi-vn.jpg" alt="">
+            </div>
+        </a>
+        <br><br>
+
+        <div class="list_product">
+            <div class="grid_list_product">
+                <div class="classify_laptop">
+                    <details open>
+                        <summary>
+                            <span>Theo nhu cầu</span>
+                        </summary>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Mỏng nhẹ
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> OLED category
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Tablet 2-in-1 laptop
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Everyday use
+                        </div>
+                    </details><br>
+                    <details open>
+                        <summary>
+                            <span>Theo dòng</span>
+                        </summary>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Zenbook
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Vivobook
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> ProArt Studiobook
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> ExpertBook
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Laptop cơ bản
+                        </div>
+                    </details><br>
+                    <details open>
+                        <summary>
+                            <span>Hệ điều hành</span>
+                        </summary>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Windows 10 Pro
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Windows 10 Home
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Windows 11 Pro
+                        </div>
+                    </details><br>
+                    <details>
+                        <summary>
+                            <span>Kích thước màn hình</span>
+                        </summary>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Nhỏ hơn 12"
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> 13"
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> 14"
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> 15"
+                        </div>
+                    </details><br>
+                    <details>
+                        <summary>
+                            <span>Độ phân giải</span>
+                        </summary>
+                        <div>
+                            <input type="checkbox" id="checkbox"> HD (1366 x 768)
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Full HD (1920 x 1080)
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> 4K UHD (3840 x 2160)
+                        </div>
+                    </details><br>
+                    <details>
+                        <summary>
+                            <span>Màn hình cảm ứng</span>
+                        </summary>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Màn hình cảm ứng
+                        </div>
+                    </details><br>
+                    <details>
+                        <summary>
+                            <span>Vi sử lý</span>
+                        </summary>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            Intel® Core™ i3
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            Intel® Core™ i5
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            Intel® Core™ i7
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            Intel® Core™ i9
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            Intel® Pentium®
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            Intel® Celeron®
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            AMD Ryzen™ 7
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            AMD Ryzen™ 3
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            AMD Ryzen™ 5
+
+                        </div>
+                    </details><br>
+                    <details>
+                        <summary>
+                            <span>Bộ nhớ RAM</span>
+                        </summary>
+                        <div>
+                            <input type="checkbox" id="checkbox"> 4GB RAM
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> 8GB RAM
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> 16GB RAM
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> 32GB RAM
+                        </div>
+                    </details><br>
+                    <details>
+                        <summary>
+                            <span>Card đồ họa</span>
+                        </summary>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            Integrated Graphics
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            NVIDIA® GeForce® RTX™
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            NVIDIA® GeForce® GTX
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            AMD Radeon Vega
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            NVIDIA® GeForce® MX
+                        </div>
+                    </details><br>
+                    <details>
+                        <summary>
+                            <span>Dung lượng ổ cứng</span>
+                        </summary>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Nhỏ hơn 256GB
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> 256GB - 512GB
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox"> 1T và hơn
+                        </div>
+                    </details><br>
+                    <details style="border: none;">
+                        <summary>
+                            <span>Cổng kết nối</span>
+                        </summary>
+                        <div>
+                            <input type="checkbox" id="checkbox"> Thunderbolt
+                        </div>
+                    </details>
+                </div>
+
+                <div class="all_product">
+                    <div class="present_laptop">
+                        <h1>Vivobook</h1><br>
+                        <p>Đa sắc màu, bật cá tính. ASUS Vivobook Series trẻ trung, táo bạo được thiết kế để đại diện
+                            bản sắc giới trẻ. Với hiệu suất đỉnh cao, bản lề ErgoLift linh hoạt và màn hình viền mỏng
+                            NanoEdge, ASUS Vivobook là máy tính xách tay tốt nhất giới trẻ chinh phục mọi thử thách.</p>
+                        <br>
+                        <a href="#">
+                            <div class="view_more">
+                                <p>Xem tất cả Vivobook</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="show_product">
+                        <div class="detail_product">
+                            <div>
+                                <h3>Vivobook S</h3>
+                                <div>
+                                    <img src="https://www.asus.com/media/Odin/Websites/global/SubSeries/global_VivoBook-S_1/P_setting_xxx_0_90_end_185.png?webp"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <a href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                                </div><br>
+                                <div>
+                                    <p>
+                                        Máy tính xách tay tốt nhất được thiết kế để mang đến cho bạn lợi thế vượt trội
+                                        về
+                                        hiệu
+                                        quả quy trình làm việc với thiết kế màn hình kép với ASUS ScreenPad ™ Plus giúp
+                                        giải
+                                        phóng toàn bộ sức mạnh sáng tạo của bạn.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="detail_product">
+                            <div>
+                                <h3>Vivobook</h3>
+                                <div>
+                                    <img src="https://www.asus.com/media/Odin/Websites/global/SubSeries/global_VivoBook-S_1/P_setting_xxx_0_90_end_185.png?webp"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <a href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                                </div><br>
+                                <div>
+                                    <p>
+                                        Máy tính xách tay tốt nhất được thiết kế để mang đến cho bạn lợi thế vượt trội
+                                        về
+                                        hiệu
+                                        quả quy trình làm việc với thiết kế màn hình kép với ASUS ScreenPad ™ Plus giúp
+                                        giải
+                                        phóng toàn bộ sức mạnh sáng tạo của bạn.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="detail_product">
+                            <div>
+                                <h3>Vivobook Flip </h3>
+                                <div>
+                                    <img src="https://www.asus.com/media/Odin/Websites/global/SubSeries/global_VivoBook-Flip/P_setting_xxx_0_90_end_185.png?webp"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <a href="">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                                </div><br>
+                                <div>
+                                    <p>
+                                        Máy tính xách tay tốt nhất được thiết kế để mang đến cho bạn lợi thế vượt trội
+                                        về
+                                        hiệu
+                                        quả quy trình làm việc với thiết kế màn hình kép với ASUS ScreenPad ™ Plus giúp
+                                        giải
+                                        phóng toàn bộ sức mạnh sáng tạo của bạn.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr width="95%" color="gray" style="margin-left: 2%;">
+                </div>
+            </div>
+        </div>
+        <script src="../js/js.js"></script>
+    </div>
+    <hr width="100%">
+
+    <div class="footer">
+        <div class="grid_footer">
+            <div class="footer_select_product">
+                <div class="learn_buy">
+                    <strong>Mua sắm và học tập</strong>
+                    <ul>
+                        <span>Máy tính xách tay</span>
+                        <li>Cá nhân</li>
+                        <li>Văn phòng</li>
+                        <li>Học tập</li>
+                        <li>Chơi game</li>
+                        <li>Sáng tạo</li>
+                    </ul>
+                    <ul>
+                        <span>Màn hình / Máy bàn</span>
+                        <li>Màn Hình</li>
+                        <li>All-in-One PCs</li>
+                        <li>Tower PCs</li>
+                        <li>Mini PCs</li>
+                    </ul>
+                    <ul>
+                        <span>Bo Mạch Chủ / Linh Kiện</span>
+                        <li>Bo Mạch Chủ</li>
+                        <li>Card Đồ Họa</li>
+                        <li>Tản Nhiệt</li>
+                        <li>Ổ Đĩa Quang</li>
+                    </ul>
+                    <ul>
+                        <span>Thiết Bị Mạng / IoT / Servers</span>
+                        <li>Hệ thống wifi phủ sóng toàn bộ căn nhà</li>
+                    </ul>
+                    <ul>
+                        <span>Phụ kiện</span>
+                        <li>Tai nghe và âm thanh</li>
+                    </ul>
+                </div>
+                <div class="search_more">
+                    <strong>Tìm hiểu thêm</strong>
+                    <ul>
+                        <li>Asus Design Center</li>
+                        <li>Automotive Solutions</li>
+                    </ul>
+                    <strong>Hỗ trợ</strong>
+                    <ul>
+                        <li>Email cho chúng tôi</li>
+                        <li>Kiểm tra tiến độ sửa chữa</li>
+                        <li>Tìm trung tâm dịch vụ</li>
+                        <li>Hệ thống phân phối sản phẩm <br>
+                            Máy tính xách tay</li>
+                        <li>Hệ thống phân phối sản phẩm <br>
+                            Doanh nghiệp</li>
+                        <li>Hệ thống phân phối sản phẩm <br>
+                            Linh kiện và phụ kiện</li>
+                        <li>Đăng kí sản phẩm</li>
+                        <li>Gọi cho chúng tôi </li>
+                        <li>Security Advisory</li>
+                        <li>MyASUS app</li>
+                        <li>ASUS Support Videos</li>
+                        <li>My Asus</li>
+                    </ul>
+                </div>
+                <div class="as_to_me">
+                    <strong>Về chúng tôi</strong>
+                    <ul>
+                        <li>Asus</li>
+                        <li>Tin tức</li>
+                        <li>Quan hệ đầu tư</li>
+                        <li>About CSR for global</li>
+                        <li>Press Room</li>
+                        <li>Cơ hội nghề nghiệp</li>
+                        <li>ASUSTOR Inc.</li>
+                        <li>ASUS Cloud Corporation</li>
+                        <li>UniMax Electronics Inc.</li>
+                    </ul>
+                </div>
+                <div class="network">
+                    <strong>Cộng đồng</strong>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr width="100%" color="gray">
+
+        <div class="copyright">
+            <p>Cover by Nguyễn Đức Minh</p>
+        </div>
+    </div>
+</body>
+
+</html>
